@@ -38,3 +38,24 @@ console.log(`mercy is age is greter than 18
 let simplified=mercy_age>18&&mercy_balance>20000
 console.log(`simplified ${simplified}`)
 console.log(`further simplification is ${mercy_age>18&&mercy_balance>20000}`)
+
+console.log(`mercy is age is greter than 18
+     or she has more than 20k in  her account
+     ${is_greater_than_18||has_more_than_20k}
+     `)
+
+/*
+ Or ateleast one stament has to be true for the whole stament ot be true
+*/
+console.log(`This is not true = ${!true}`)
+console.log(`This is not false = ${!false}`)
+
+let x=23>12 || 10>2 || mercy_age>18 && mercy_balance>20000
+// false || 10>2 || mercy_age>18 && mercy_balance>20000
+//
+//true && false && true=?false
+
+//false ||true ||(true&&false)
+
+// and is evalulated firt then false 
+//Order of evaluation is Not-> then And -> Or
