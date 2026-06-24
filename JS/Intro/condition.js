@@ -73,5 +73,6 @@ if(10>20){
 }
 //
 if(20>10){
-    console.log("Senario 6 it run")
+    console.log("Senario 6 it run");
+
 }
