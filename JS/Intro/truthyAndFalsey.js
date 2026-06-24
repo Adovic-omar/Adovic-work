@@ -15,8 +15,8 @@ Anything that is not falsey is truthy
 
 */
 
-//---> Short Circuit ->
-
+//---> Short Circuit -> syntatical
+// ---> 
 let y=true ||false||true ||false
 console.log("y is",y)
 //y=true->
