@@ -9,15 +9,14 @@
 // break -> exit a loop
 
 function sayMyName() {
-  let y = Math.min();
+  let y = Math.min(34, 4343, 223);
   let first_name = "Samson"; //statement 1
   console.log(`First Name ${first_name}`); // statement 2
   let second_name = "Johnna"; //stement 3
   console.log(`Second Name ${second_name}`); //statement 4
-
   let full_name = `${first_name} ${second_name}`; //statement 5
   console.log(`Names are ${full_name}`); //statement 6
-  return true;
+  return full_name;
 }
 
 let sayMyNameValue = sayMyName();
