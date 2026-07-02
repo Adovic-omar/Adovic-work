@@ -1,0 +1,23 @@
+/*
+- >Our own callback function
+-›doing shape stuff
+-----› shapes.
+circle -›
+rectangle-› triangle->
+1. for each of the shapes create a funciton‹arrow, name> to calculate the are. ensure the function takes required parameters.
+test the function
+*/
+
+// Circle
+const circleArea = (radius) => Math.PI * radius * radius;
+
+// Rectangle
+const rectangleArea = (length, width) => length * width;
+
+// Triangle
+const triangleArea = (base, height) => 0.5 * base * height;
+
+// Test the functions
+console.log("Circle Area:", circleArea(7));
+console.log("Rectangle Area:", rectangleArea(10, 5));
+console.log("Triangle Area:", triangleArea(8, 6));
