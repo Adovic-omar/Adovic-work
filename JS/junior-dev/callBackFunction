@@ -9,7 +9,7 @@ test the function
 */
 
 // Circle
-const circleArea = (radius) => Math.PI * radius * radius;
+const circleArea = (radius) => 3.142 * radius * radius;
 
 // Rectangle
 const rectangleArea = (length, width) => length * width;
