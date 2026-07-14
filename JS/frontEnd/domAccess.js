@@ -1,4 +1,4 @@
-Dom Access using
+/*Dom Access using
 1. querySelector
 2. documentGet‹...›
 
@@ -29,3 +29,16 @@ Dom Access using
 -in browser console you should be able hover over the element
 -Note you get the array.
 -use a for or while loop to go through the array elements
+*/
+const div1 = document.getElementById("div1");
+const div2 = document.querySelector("#div1");
+console. log (div1); console. log (div2);
+const listOfItems = document-getElementsByClassName("fruits");
+const querylistOfItems = document.querySelector(" fruits");
+const queryList0fAllItems = document. querySelectorAll(" fruits");
+console. log(listOfItems);
+console. log(queryListOfItems);
+console. log(queryList0fAllItems);
+for (let i = 0; i < queryList0fAllItems.length; i++) {
+console. log (querylist0fAllItems[i]);
+}
