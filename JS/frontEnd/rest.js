@@ -43,5 +43,5 @@ TODO.
 2. identify the url
 3. identify the params if any
 4. check on the request time
-3. for same request tyr it on postman and curl http clients.
+3. for same request try it on postman and curl http clients.
 */
