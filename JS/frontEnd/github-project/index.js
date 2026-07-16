@@ -10,7 +10,7 @@ method: "GET"
 redirect: "follow",
 fetch("https://api.github.com/users"
 , requestOptions)
-•then((response) => response.text ())
+•then((response) => response.json ())
 •then( (result) => {
 console.1og("type of result", typeof result); console.1og(result);
 })
