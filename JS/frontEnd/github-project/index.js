@@ -30,3 +30,5 @@ flow = "updated flow";
 }
 testfunc ();
 console.1og("32:", flow);|
+
+/*JS has change how we execute lines of code. */
