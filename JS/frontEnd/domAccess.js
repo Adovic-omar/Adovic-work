@@ -87,7 +87,7 @@ const newHtml =
 </ul>
 document. querySelector("#div1"). innerHTML = newHtm1;
 //some html
-function updateFruits() {
+function updateFruits(){
 console.log("update fruites clicked");
 
  //innerText, for loop or while Loop.
