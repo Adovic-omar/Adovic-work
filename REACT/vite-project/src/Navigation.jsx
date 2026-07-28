@@ -6,9 +6,11 @@ import ‹name› from "‹relative path›"
 ensure before import its in the sre directory
 */
 import logo from "./assets/logo.png";
-/* component naming rules.*/ /*null or valid jsx*/
+/* component naming rules.*/ 
+/*null or valid jsx*/
 function Navigation() {
-return ( < div>
+return ( 
+< div>
 <h2>Navigation section</h2>
 </ div>
 ) ;
