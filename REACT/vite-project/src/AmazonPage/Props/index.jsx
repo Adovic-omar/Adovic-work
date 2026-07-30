@@ -52,8 +52,12 @@ isok <b>{String(props.isOk)}</b>{""}
 for booleans convert them to string before displaying
 */}
 </li>
-<li>Not set <b>{props.notSet}</b></li>
+<li>
+    Not set <b>{props.notSet}</b>
+</li>
   </ul>
 </div>
+   ),
+}
 
 export default Parent;
