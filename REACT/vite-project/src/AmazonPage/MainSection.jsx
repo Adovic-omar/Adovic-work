@@ -1,8 +1,8 @@
-import ItemCard from •/ItemCard";
+import ItemCard from "•/ItemCard";
 
 function MainSection() {
    return (
-       div style={{ display: "flex", flexwrap: "wrap" }}>
+     <div style={{ display: "flex", flexwrap: "wrap" }}>
              < ItemCard/>
               <ItemCard/>
               <ItemCard/>

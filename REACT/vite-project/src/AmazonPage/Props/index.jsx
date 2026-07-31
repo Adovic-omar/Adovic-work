@@ -26,6 +26,8 @@ return (
 <div>
 <h1> I am the parent component</h1>
 <Child1 str={str} amountInNumber={amount} is0k={is0k} notSet={notSet} />
+<Child2 str={str} amountInNumber={amount} is0k={is0k} notSet={notSet} />
+<Child3 str={str} amountInNumber={amount} is0k={is0k} notSet={notSet} />
 </div>
 
 ) 
@@ -35,7 +37,7 @@ function Child1(props) {
 console.log (props);
 return (
   <div>
-  <h1> I am the child component</h1>
+  <h1> I am the child 1 component</h1>
   <ul>
     <li>
 Favourite string <b>{props.str}</b>
