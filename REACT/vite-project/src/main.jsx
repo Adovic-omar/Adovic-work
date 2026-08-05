@@ -4,7 +4,7 @@ import {createRoot} from "react-dom/client";
 import ColorsAndCircles from "./ColorsAndCircles";"
 
 
-createRoot (document. getElementById("root")).render (
+createRoot (document. getElementById("root")).render(
 
   <StrictMode>
     <ColorsAndCircles />
