@@ -1,0 +1,47 @@
+import FilterList from "./FilterList";
+
+function SideBar() {
+  return (
+    <div
+      style={{
+        display: "flex",
+        width: "500px",
+        flexDirection: "column",
+      }}
+    >
+      <FilterList
+        title="Conditions"
+        options={["New", "Used", "Renewed"]}
+      />
+
+      <FilterList
+        title="Material"
+        options={["Plastic", "Rubber", "PVC", "Alloy Steel", "Aluminium"]}
+      />
+
+      <FilterList
+        title="Uses"
+        options={[
+          "Exercise",
+          "Speed And Endurance",
+          "Boxing",
+          "Body Building",
+          "Martial Arts",
+        ]}
+      />
+
+      <FilterList
+        title="Brand"
+        options={[
+          "Cross Rope",
+          "Venum",
+          "SportBit",
+          "Canon Sport",
+          "Adidas",
+        ]}
+      />
+    </div>
+  );
+}
+
+export default SideBar;
