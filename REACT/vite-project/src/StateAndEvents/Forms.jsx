@@ -64,7 +64,7 @@ function Form() {
 
       <button onClick={onSubmit}>Submit</button>
 
-      {/* Displaying data */}
+      /* Displaying data */
       <ul>
         <li>Name: {name}</li>
         <li>Email: {email}</li>
