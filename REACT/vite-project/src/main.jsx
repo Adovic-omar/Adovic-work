@@ -1,12 +1,12 @@
 import {StrictMode} from "react";
 import {createRoot} from "react-dom/client";
 
-import ColorsAndCircles from "./ColorsAndCircles";"
+import GithubProject from "./GithubProject";
 
 
 createRoot (document. getElementById("root")).render(
 
   <StrictMode>
-    <ColorsAndCircles />
+    <GithubProject />
   </StrictMode>,
 );
