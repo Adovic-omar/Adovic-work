@@ -1,3 +1,5 @@
+object_oriented_programming
+
 """
 Object oriented programming.
 JS ,Python ,C++,JAVA ,etc.
@@ -41,7 +43,14 @@ class House:
     location=""
     architect="KIMANI"
 
+    #js constructor
+    def __init__(self,owner,location):
+        print("Class house created: initializer called")
+        self.owner=owner
+        self.location=location
+
     def config(self,owner,location):
+        print("Config method has run")
         self.owner=owner
         self.location=location
 
@@ -57,26 +66,37 @@ class House:
 #=> method ,config ->
 #=> print_house
 
-machine_house=House()
-# machine_house.owner="Macrine"
-# machine_house.location="Kikuyu"
-machine_house.config(owner="Macrine",location="kikuyu")
-print(f"Macrines House Owner {machine_house.owner}")
-print(f"Macrines Location {machine_house.location}")
-print(f"Macrines House Bedrooms {machine_house.bedrooms}")
-print(f"Macrines House Bathroom {machine_house.bathrooms}")
-print(f"Macrines House Bedrooms {machine_house.floors}")
-print(f"Macrines House area {machine_house.area}")
-print(f"Macrines House Designer {machine_house.architect}")
+#Instead of:
+# machine_house=House()
+# machine_house.config(owner="Macrine",location="kikuyu")
+
+#We can pass the values directly when creating the object
+macrine_house=House(owner="Macrine",location="Kikuyu")
+
+# macrine_house.__init__()
+# macrine_house.owner="Macrine"
+# macrine_house.location="Kikuyu"
+# macrine_house.config(owner="Macrine",location="Kikuyu")
+
+print(f"Macrines House Owner {macrine_house.owner}")
+print(f"Macrines House Location {macrine_house.location}")
+print(f"Macrines House Bedrooms {macrine_house.bedrooms}")
+print(f"Macrines House Bathroom {macrine_house.bathrooms}")
+print(f"Macrines House Floors {macrine_house.floors}")
+print(f"Macrines House area {macrine_house.area}")
+print(f"Macrines House Designer {macrine_house.architect}")
 print("Printing macrines house")
-machine_house.print_self()
+macrine_house.print_self()
 print("End of print macrines")
 
 
-daniel_house=House()
+daniel_house=House(owner="Daniel",location="Muranga")
+
+# daniel_house.__init__()
 # daniel_house.owner="Daniel"
 # daniel_house.location="Muranga"
-daniel_house.config(owner="Daniel",location="Muranga")
+# daniel_house.config(owner="Daniel",location="Muranga")
+
 print(f"Daniels House Owner {daniel_house.owner}")
 print(f"Daniels Location {daniel_house.location}")
 print(f"Daniels House Bedrooms {daniel_house.bedrooms}")
