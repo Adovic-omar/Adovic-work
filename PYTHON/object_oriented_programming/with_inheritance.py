@@ -1,65 +1,78 @@
+"""
+Shape class.
+    properties and methods common to all shapes.
+
+    → private , public ←
+    → getters and setters <hide the properties <private >>
+"""
+
 class Shape:
-    def __init__(self, name):
-        self.name = name
+    def __init__(self,shape_name):
+        self.shape_name=shape_name
 
+    def describe(self):
+        print(f"This is a {self.shape_name}")
+
+    def display_info(self):
+        print("----------------------------------------")
+        print(f"Shape: {self.shape_name}")
+        print(f"Area: {self.area()}")
+        print(f"Perimeter: {self.perimeter()}")
+        print("----------------------------------------")
+
+
+#method area
     def area(self):
-        pass
+        print(f"For shape {self.shape_name} area calculation missing")
 
     def perimeter(self):
-        pass
+        print(f"For shape {self.shape_name} perimeter calculation missing")
 
 
+#inheritance class Name (<class inheriting from>)
 class Rectangle(Shape):
-    def __init__(self, length, width):
-        super().__init__("Rectangle")
-        self.length = length
-        self.width = width
 
+    def __init__(self,length,width):
+        #name shape shape
+        #super <class we are inheriting from>
+        #self <specific object created the class>
+        super().__init__(shape_name="Rectangle")
+
+        self.length=length
+        self.width=width
+
+    #method calculating area
     def area(self):
-        return self.length * self.width
+        return self.length*self.width
 
     def perimeter(self):
-        return 2 * (self.length + self.width)
-
-
-class Square(Shape):
-    def __init__(self, side):
-        super().__init__("Square")
-        self.side = side
-
-    def area(self):
-        return self.side * self.side
-
-    def perimeter(self):
-        return 4 * self.side
+        return 2*(self.length+self.width)
 
 
 class Triangle(Shape):
-    def __init__(self, base, height):
-        super().__init__("Triangle")
-        self.base = base
-        self.height = height
 
-    def area(self):
-        return 0.5 * self.base * self.height
-
-    def perimeter(self):
-        hypotenuse = (self.base ** 2 + self.height ** 2) ** 0.5
-        return self.base + self.height + hypotenuse
+    def __init__(self,base,height):
+        super().__init__(shape_name="Triangle")
 
 
-rectangle = Rectangle(20, 12)
-square = Square(10)
-triangle = Triangle(3, 4)
+#code for the square class
+class Square(Rectangle):
+    def __init__(self,side):
+        #super → its not shape its Rectangle
+        super().__init__(length=side,width=side)
+        self.shape_name="Square"
 
-print("Rectangle")
-print("Area:", rectangle.area())
-print("Perimeter:", rectangle.perimeter())
 
-print("\nSquare")
-print("Area:", square.area())
-print("Perimeter:", square.perimeter())
+s1=Square(side=35)
+print("Shape name",s1.shape_name) #shape name
+print("Area is",s1.area()) #Square → Rectangle → Shape
+s1.describe() #Shape
+s1.display_info()#shape
+# r1=Rectangle(length=20,width=12)
 
-print("\nTriangle")
-print("Area:", triangle.area())
-print("Perimeter:", triangle.perimeter())
+# print("Shape name",r1.shape_name) #shape name
+# print("Area is",r1.area()) #Recange. area ◇
+# r1.describe() #Shape
+# r1.display_info()#shape
+t1=Triangle(20,30)
+t1.area() # Triangle → Shape
